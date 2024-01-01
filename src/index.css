@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.6;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+.btn {
+	display: inline-block;
+	border: 0;
+	background: 0;
+	padding: 1em 1.5em;
+	font-size: 1.125rem;
+	font-weight: 700;
+	transition: 250ms;
+}
+
+.btn--primary{
+    @apply rounded-full text-white px-6 py-2 bg-primary font-bold hover:scale-105 duration-300 cursor-pointer drop-shadow-sm;
+}
+
+.flow-content--s > * + *  {
+	margin-top: .5rem !important;
+}
+.flow-content--m > * + *  {
+	margin-top: 1rem !important;
+}
+.flow-content--xm > * + *  {
+	margin-top: 1.5rem !important;
+}
+.flow-content--l > * + *  {
+	margin-top: 3rem !important;
+}
+.flow-content--xl > * + *  {
+	margin-top: 3.5rem !important;
+}
+
+@keyframes spin {
+	from{
+		transform: rotate(0deg);
+	} to  {
+		transform: rotate(360deg);
+	}
+}
+
+.spin {
+	animation: spin 40s linear infinite;
+}
