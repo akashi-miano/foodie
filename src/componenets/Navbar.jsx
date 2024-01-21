@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="nav  shadow-md py-4 px-8 bg-white fixed top-0 left-0 right-0 z-10 dark:bg-gray-900 dark:text-white duration 200 flex items-center gap-16">
       <div className="container mx-auto flex items-center justify-between gap-24 px-4">
         <a
-          className="flex items-center text-zinc-900 text-3xl font-bold gap-4 dark:text-white"
+          className="flex items-center justify-center w-full  md:w-fit text-zinc-900 text-3xl font-bold gap-4 dark:text-white"
           href=""
         >
           <img src={Logo} alt="" className="w-[50px]" /> Foodie

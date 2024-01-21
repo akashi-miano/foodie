@@ -11,6 +11,12 @@
 body {
 	line-height: 1.6;
 }
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2.5rem;
+}
+
 
 html, body {
     max-width: 100%;
@@ -28,7 +34,7 @@ html, body {
 }
 
 .btn--primary{
-    @apply rounded-full text-white px-6 py-2 bg-primary font-bold hover:scale-105 duration-300 cursor-pointer drop-shadow-sm;
+    @apply px-6 py-2 font-bold text-white duration-300 rounded-full cursor-pointer bg-primary hover:scale-105 drop-shadow-sm;
 }
 
 .flow-content--s > * + *  {
@@ -57,4 +63,15 @@ html, body {
 
 .spin {
 	animation: spin 40s linear infinite;
+}
+
+@media (max-width: 550px) {
+	html{
+		font-size: 65%;
+	}
+}
+
+
+.shadow {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

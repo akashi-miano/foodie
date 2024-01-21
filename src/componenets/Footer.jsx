@@ -7,12 +7,16 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-gray-200 dark:bg-gray-950 dark:text-white duration-250 py-12">
+    <footer
+      className="py-12 bg-gray-200 footer dark:bg-gray-950 dark:text-white duration-250"
+      data-aos="zoom-in"
+      data-aos-delay="600"
+    >
       <div className="container mx-auto max-w-[1200px] px-8 text-center md:text-left">
-        <div className="grid md:grid-cols-4 gap-4">
+        <div className="grid gap-4 md:grid-cols-4">
           <div className="text-wrapper flow-content--m">
             <a
-              className="flex items-center text-zinc-900 text-3xl font-bold gap-4 dark:text-white justify-center md:justify-start"
+              className="flex items-center justify-center gap-4 text-3xl font-bold text-zinc-900 dark:text-white md:justify-start"
               href=""
             >
               <img src={logoIcon} alt="" className="w-[50px]" /> Foodie
@@ -22,13 +26,13 @@ const Footer = () => {
               Consectetur quisquam quibusdam magni, exercitationem facere
               consequatur.
             </p>
-            <p className="flex items-center gap-4 justify-center md:justify-start">
+            <p className="flex items-center justify-center gap-4 md:justify-start">
               <FaLocationArrow /> Noida, Uttar Pradesh
             </p>
-            <p className="flex items-center gap-4 justify-center md:justify-start">
+            <p className="flex items-center justify-center gap-4 md:justify-start">
               <FaMobileScreen /> +91 123456789
             </p>
-            <ul className="socials flex items-center gap-4 justify-center md:justify-start">
+            <ul className="flex items-center justify-center gap-4 socials md:justify-start">
               <li>
                 <a href="">
                   <FaInstagram fontSize={25} />

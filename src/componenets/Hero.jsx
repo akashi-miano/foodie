@@ -31,12 +31,16 @@ const Hero = () => {
   return (
     <section
       style={bgImgStyles}
-      className="bg-gray-100 dark:bg-gray-950 dark:text-white duration-200 flex justify-center items-center min-h-screen"
+      className="flex items-center justify-center min-h-screen duration-200 bg-gray-100 dark:bg-gray-950 dark:text-white"
     >
       <div className="container py-8 sm:pb-0 px-4 max-w[1200px]">
-        <div className="grid md:grid-cols-2 p-8 flow-content--m">
-          <header className="text-center md:text-left flow-content--m flex flex-col justify-center order-2 md:order-0 mt-8 md:mt-0">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+        <div className="grid p-8 md:grid-cols-2 flow-content--m">
+          <header
+            className="flex flex-col justify-center order-2 mt-8 text-center md:text-left flow-content--m md:order-0 md:mt-0"
+            data-aos="zoom-out"
+            data-aos-duration="400"
+          >
+            <h1 className="text-5xl font-bold sm:text-6xl lg:text-7xl">
               Welcome to the <span className="text-primary">Foodie</span> Zone
             </h1>
             <p className="max-w-[450px] mx-auto md:-mx-0">
@@ -45,12 +49,16 @@ const Hero = () => {
               distinctio quaerat dignissimos unde?
             </p>
             <div className="">
-              <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full hover:scale-105 duration-200 cursor-pointer">
+              <button className="px-4 py-2 text-white duration-200 rounded-full cursor-pointer bg-gradient-to-r from-primary to-secondary hover:scale-105">
                 Order Now
               </button>
             </div>
           </header>
-          <div className="img-wrapper flex flex-col lg:flex-row items-center gap-4 md:order-2">
+          <div
+            className="flex flex-col items-center gap-4 img-wrapper lg:flex-row md:order-2"
+            data-aos="fade-left"
+            data-aos-duration="600"
+          >
             <div>
               <img
                 src={imgId}
@@ -58,12 +66,14 @@ const Hero = () => {
                 className="w-[300px] sm:w-[450px] mx-auto spin"
               />
             </div>
-            <div className="flex lg:flex-col gap-4 bg-white/30 rounded-full px-2 lg:py-2">
+            <div className="flex gap-4 px-2 rounded-full lg:flex-col bg-white/30 lg:py-2">
               {imageList.map((item) => (
                 <img
                   key={item.id}
                   src={item.img}
                   className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200 cursor-pointer"
+                  data-aos="zoom-in"
+                  data-aos-duration="400"
                   onClick={() => {
                     setImgId(
                       item.id === 1 ? food1 : item.id === 2 ? food2 : food3
